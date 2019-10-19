@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Portifolio - Alisson</title>
+    <meta name="author" content="Adtile">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- Font Icons start-->
+    <script src="https://kit.fontawesome.com/e783a8e426.js" crossorigin="anonymous"></script>
+    <!-- Font Icons end -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/responsive-nav.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#home" class="logo" data-scroll>Alisson Custodio</a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="menu-item active"><a href="#home" data-scroll>Home</a></li>
+          <li class="menu-item"><a href="#about" data-scroll>Sobre</a></li>
+          <li class="menu-item"><a href="#projects" data-scroll>Serviços</a></li>
+          <li class="menu-item"><a href="#contact" data-scroll>Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+    	<div class="rightbg1"></div>
+        <div class="slider-foto" id="particles-js">
+            <div id="particles-js">
+                <div style="background-color: red" class="slider-bg">
+                    <h4 class="texto-fixo">Você está procurando um site</h4>
+                    <div id="texto-com-efeito">... </div>
+            	</div>
+            </div>
+        </div>
+        <div class="rightbg"></div>
+        <!-- INICIO AUTO ESCREVER -->
+        <script>
+        	var div = document.getElementById('texto-com-efeito');
+            var textos = ['totalmente responsivo?', 'para você ou sua empresa?', 'então está no lugar certo!'];
+            function escrever(str, done) {
+                var char = str.split('').reverse();
+                var typer = setInterval(function() {
+                    if (!char.length) {
+                        clearInterval(typer);
+                        return setTimeout(done, 900); // só para esperar um bocadinho
+                    }
+                var next = char.pop();
+                    div.innerHTML += next;
+                }, 100);
+            }
+            function limpar(done) {
+                var char = div.innerHTML;
+                var nr = char.length;
+                var typer = setInterval(function() {
+                    if (nr-- == 4) {
+                        clearInterval(typer);
+                        return done();
+                    }
+                    div.innerHTML = char.slice(0, nr);
+                }, 25);
+            }
+            function rodape(conteudos, el) {
+                var atual = -1;
+                function prox(cb){
+                    if (atual < conteudos.length - 1) atual++;
+                    else atual = 0;
+                    var str = conteudos[atual];
+                    escrever(str, function(){
+                        limpar(prox);
+                    });
+                }
+                prox(prox);
+            }
+            rodape(textos);
+        </script> 
+    </section>
+
+    <section id="about">
+    	<h1>Sobre</h1>
+  		<h2>Saiba mais sobre min</h2>
+    	<div id="left">
+			<img id="profile" src="https://instagram.fsjp2-1.fna.fbcdn.net/vp/6dbaec84066d133b7bd835544510fc82/5E3CE999/t51.2885-15/sh0.08/e35/p640x640/64479397_184775472520171_5541638330052454416_n.jpg?_nc_ht=instagram.fsjp2-1.fna.fbcdn.net&_nc_cat=107">
+		</div>
+		<div id="right">
+			<h5>Alisson Custodio</h5>
+			<div id="text">
+				<p>&nbsp; Alisson sempre foi apaixonado por computadores e começou sua careira logo cedo, desde pequeno desenvolveu sua habilidade de curiosidade para procurar, aprender e melhorar suas aplicacões. <br><br>
+				&nbsp; Hoje aos 18 anos de idade, Alisson é um jovem emprededor de sucesso! Cursando Information Security na faculdade federal de Santa Catarina, ja fez parcerias com grandes empresas, como a Google, Facebook e o Ibai. <br><br>
+				&nbsp; As habilidades de produção com maior dominio são HTML , CSS , Javascript , MYSQLI , Jquery.. Porem seus conhecimentos cobrem tambem toda area de segurança de dados (Information Security), construção de bancos de dados com base em MYSQLI, Disgner de estruturas integral. </p>
+			</div>
+		</div>
+    </section>
+	<section id="you-know">
+		<div class="vs-color">
+			<div id="you-know-left">
+				<br><h4>Você sabia?</h4><br>
+				• 94% dos Brasileiros acessam a internet pelo celular.<br><br>
+
+				• A compatibilidade de um site com dispositivos móveis é um <br> fator de classificação nos resultados de buscas do Google.<br><br>
+
+				<h3>SITE NÃO RESPONSIVO SIGNIFICA ESTAR ATRÁS DA CONCORRÊNCIA!</h3>
+			</div>
+			<div id="you-know-right">
+				<img id="img-you-know" src="https://matheusmhq.com.br/img/voce-sabia/responsivo.gif"/>
+			</div>
+		</div>
+	</section>
+	<section id="projects">
+      	<h1>Serviços</h1>
+  		<h2>Alguns dos serviços disponiveis</h2>
+      	<div id="services">
+			<div id="work" class="circle-border">
+				<i class="fas fa-expand-arrows-alt"></i>
+				<h3><p>Desenvolvimento de sites</p></h3>
+				<p>Um design bem elaborado e responsivo que se adapta aos dispositivos atuais (smartphone, tablet etc...)</p>
+			</div>
+			<div id="work" class="circle-border">
+				<i class="fas fa-user-shield"></i>
+				<h3><p>Teste de segurança</p></h3>
+				<p>Os dados de seus cliente estão seguros? Teste a capacidade de segurança da sua rede e descubra o quao eficiente é seu site.</p>
+			</div>
+			<div id="work" class="circle-border">
+				<i class="fas fa-poll"></i>
+				<h3><p>Resultados</p></h3>
+				<p>Unindo um bom design a um seo bem otimizado seu site trará resultados que você nunca viu antes.</p>
+			</div>
+		</div>
+			<div id="skill">
+				<div class="is-skill circle-border"><i class="fab fa-html5"></i><br> HTML5</div>
+				<div class="is-skill circle-border"><i class="fab fa-css3-alt"></i><br> CSS</div>
+				<div class="is-skill circle-border"><i class="fab fa-js"></i><br> JavaScrip</div>
+				<div class="is-skill circle-border"><i class="fab fa-php"></i><br> PHP</div>
+				<div class="is-skill circle-border"><i class="fab fa-python"></i></i><br> Python</div>
+				<div class="is-skill circle-border"><i class="fab fa-wordpress-simple"></i><br> WordPress</div>
+				<div class="is-skill circle-border"><i class="fab fa-node"></i><br> Node.js</div>
+				<div class="is-skill circle-border"><i class="fas1 fas fa-database"></i><br> MySQL</div>
+			</div>		
+    </section>
+    <section id="contact">
+      	<h1>Contato</h1>
+  		<h2>Entre em contato para maiores informaçoes</h2>
+  		<div id="contactcenter">
+	  		<div id="contact-left" class="circle-border">
+	  			<form name="formulario" action="http://scripts.redehost.com.br/formmail.aspx" method="post">
+				<input type=hidden name="destino" value="EmailQueVaiReceberAsMensagens">
+				<input type=hidden name="enviado" value="http://www.seudominio.xxx.yy/enviado.htm">
+				<div id="input-left">
+					<input type=text name="nome" placeholder=" Nome" class="input"></p>
+					<input type=text name="email" placeholder=" Email" class="input"></p>
+				</div>
+				<div id="input-right">
+					<input type=text name="numero" placeholder=" Numero" class="input"></p>
+					<input type=text name="assunto" placeholder=" Assunto" class="input"></p>
+				</div>
+				<div>
+					<textarea name="Mensagem" wrap="virtual" placeholder=" Menssagem" class="input-msg"></textarea>
+					<input type="submit" value="Enviar Email" class="send">
+				</div>
+			</form>
+	  		</div>
+	  		<div id="contact-right">
+	  			<h3>Dúvidas? Quer um contato imediato? Use as opções abaixo!</h3><br>
+	  			<i class="fascontact fas fa-map-marker-alt"></i>Votuporanga - SP<br>
+	  			<i class="fabcontactzap fab fa-whatsapp"></i><a style="color: black" href="https://api.whatsapp.com/send?phone=5517997755598" target="_blank">+55 (17) 9.9775-5598</a><br>
+	  			<i class="fascontact fas fa-envelope"></i>alissoncustodio192@hotmail.com<br>
+	  			<h3>Redes Socias</h3>
+	  			<a href="https://www.facebook.com/AlissonForEverGamer" target="_blank"><i class="fabcontact fab fa-facebook-square"></i></a>
+	  			<a href="https://www.facebook.com/messages/t/AlissonForEverGamer" target="_blank"><i class="fabcontact fab fa-facebook-messenger" target="_blank"></i></a>
+	  			<a href="https://www.instagram.com/alisucustodio/" target="_blank"><i class="fabcontact fab fa-instagram"></i></a>
+	  			<i class="fabcontact fab fa-twitter"></i>
+	  			<i class="fabcontact fab fa-github"></i>
+	  		</div>
+	  	</div>
+    </section>
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+	<div id="footer">
+		© 2019 Alisson Custodio - Todos os direitos reservados.
+	</div>
+</body>
+</html>

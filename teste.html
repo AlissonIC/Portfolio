@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<div id="minhaDiv" style="display:none">Conteudo</div>
+	<button type="button" class="btn-toggle" data-element="#minhaDiv">Mostrar / Esconder</button>
+	<script type="text/javascript">
+		$(function() {
+		  $(".btn-toggle").click(function(e) {
+		    e.preventDefault();
+		    el = $(this).data('element');
+		    $(el).slideToggle();
+		  });
+		});
+
+
+		$(function(){
+			$('section').click(function(){
+				$(this).siblings('p.box').slideToggle();
+				if($(this).text() == "Mostrar mais"){
+					$(this).text("Ocultar");
+				} else{
+		    		$(this).text("Mostrar mais");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

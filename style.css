@@ -1,0 +1,99 @@
+/* INICIAL CSS */
+
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+summary, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Hide Checkbox */
+#toggle { 
+	position: absolute;
+	cursor: pointer;
+	left: -100%;
+	top: -100%;
+}
+
+/* Menu Style */
+#menu {
+	background: #181818;
+	color: #fff;
+	position: absolute;
+	top: -250px;
+	left: 0;
+	width: 100%;
+	height: 250px;
+	padding: 20px;
+	-webkit-transition: top 300ms cubic-bezier(0.15,0.04,0.03,0.94);
+	-moz-transition: top 300ms cubic-bezier(0.15,0.04,0.03,0.94);
+	transition: top 300ms cubic-bezier(0.15,0.04,0.03,0.94);
+	overflow: hidden;
+	box-sizing: border-box;
+}
+/* Adjoining sibling selector 
+   + -> Select only next element of sequence (subling of previous element) */
+
+#toggle+label{
+	position: absolute;
+	cursor: pointer;
+	padding: 10px;
+	background: #0b5fc7;
+	width: 100px;
+	border-radius: 45px;
+	padding: 8px 10px;
+	color: #fff;
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+	margin: 20px 50px;
+	transition: all 500ms ease;
+}
+/* Previous click action - btn open */
+#toggle+label:after{
+	content: "Abrir";
+}
+/* Sibling selector - tilde
+   ~ -> Captures all sibling elements of an element that
+   comes from the same parent element. If it is checked,
+   ie when you click it opens the menu. */
+#toggle:checked~#menu{
+	top: 0;
+}
+
+/* Smooth transition to container */
+#container {
+	transition: margin 300ms cubic-bezier(0.15,0.04,0.03,0.94);
+	padding: 5em 3em;
+}
+
+#toggle:checked~#container{
+	margin-top: 250px;
+}
+/* Assigns color to close when toggle is checked */
+#toggle:checked+label{
+	background: #DC3838;
+}
+#toggle:checked+label:after{
+	content: "Fechar";
+}
+
+
+/* H2 GRADIENT */
+
+.is-title-fill{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 6rem;
+}
+.fill {
+	/* background - Gradient */
+	background: -webkit-linear-gradient(left, #ff1053 0%, #ff4f0f 100%);
+	background: linear-gradient(to right, #ff1053 0%, #ff4f0f 100%);
+	
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
