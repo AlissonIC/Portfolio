@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/responsive-nav.js"></script>
     <!-- Font Icons start-->
     <script src="https://kit.fontawesome.com/e783a8e426.js" crossorigin="anonymous"></script>
+    <!-- Font h1 -->
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -26,10 +27,10 @@
       <a id="no-click" href="#home" class="logo" data-scroll>Alcateia Network</a>
       <nav class="nav-collapse">
         <ul>
-          <li class="menu-item active"><a href="#home" data-scroll>Home</a></li>
-          <li class="menu-item"><a href="#about" data-scroll>Sobre</a></li>
-          <li class="menu-item"><a href="#projects" data-scroll>Serviços</a></li>
-          <li class="menu-item"><a href="#contact" data-scroll>Contato</a></li>
+          <li class="menu-item active"><a id="no-click" href="#home" data-scroll>Home</a></li>
+          <li class="menu-item"><a id="no-click" href="#about" data-scroll>Sobre</a></li>
+          <li class="menu-item"><a id="no-click" href="#projects" data-scroll>Serviços</a></li>
+          <li class="menu-item"><a id="no-click" href="#contact" data-scroll>Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -64,18 +65,18 @@
 		</div>
     </section>
     <section id="about">
-		<h2 class="is-title-fill fill">Alisson Custodio</h2>
-		<p id="sub"> Seja bem vindo, saiba tudo sobre min abaixo.</p>
+		<h1>Sobre</h1>
+		<p>Saiba tudo sobre min</p>
   		<div id="aboutcenter">
-			<div id="right">
-				<div id="text">
-					<p>&nbsp; Alisson sempre foi apaixonado por computadores e começou sua careira logo cedo, desde pequeno desenvolveu sua habilidade de curiosidade para procurar, aprender e melhorar suas aplicacões. Do tipo que preferia desmontar o seu carrinho de controle remoto para entender como funciona do que apenas controlalo pelo joystick.<br><br>
-					&nbsp; Hoje aos 18 anos de idade, Alisson é um jovem emprededor de sucesso! Cursando Information Security na faculdade federal de Santa Catarina, é o fundador da empresa Alcateia Network, onde desenvolve soluções web para seus clientes. <br><br>
-					&nbsp; As habilidades de produção com maior dominio são HTML, CSS, Javascript, MYSQLI, Jquery.. Porem seus conhecimentos vão muito alem e cobrem tambem toda area de segurança de dados (Information Security), marketing, disgner de estruturas 2D e 3D, Photoshop e After Efects. </p>
-				</div>
-			</div>
 	    	<div id="left">
 				<img id="profile" src="https://instagram.fsjp2-1.fna.fbcdn.net/vp/6dbaec84066d133b7bd835544510fc82/5E3CE999/t51.2885-15/sh0.08/e35/p640x640/64479397_184775472520171_5541638330052454416_n.jpg?_nc_ht=instagram.fsjp2-1.fna.fbcdn.net&_nc_cat=107">
+			</div>
+			<div id="right">
+				<div id="text">
+					<p>&nbsp; Alisson sempre foi apaixonado por computadores e começou sua careira logo cedo, desde pequeno desenvolveu sua habilidade de curiosidade para procurar, aprender e melhorar suas aplicações. Do tipo que preferia desmontar o seu carrinho de controle remoto para entender como funciona do que apenas controlá-lo pelo joystick.<br><br>
+					&nbsp; Hoje aos 18 anos de idade, Alisson é um jovem empreendedor de sucesso! Cursando Information Security na faculdade federal de Santa Catarina, é o fundador da empresa Alcateia Network, onde desenvolve soluções web para seus clientes.<br><br>
+					&nbsp; As habilidades de produção com maior dominio são HTML, CSS, Javascript, MYSQLI, Jquery.. Porem seus conhecimentos vão muito além e cobrem também toda area de segurança de dados (Information Security), marketing, designer de estruturas 2D e 3D, Photoshop e After Efects. </p>
+				</div>
 			</div>
 		</div>
     </section>
@@ -117,7 +118,7 @@
 	</section>
 	<section id="projects">
     	
-  		<h1 style="color: white">Serviços<br></h1>
+  		<h1>Serviços<br></h1>
 		<h6><small class="text-muted">Alguns dos serviços disponiveis</small></h6>
       	<div id="services">
 			<div id="work" class="circle-border">
@@ -128,12 +129,12 @@
 			<div id="work" class="circle-border">
 				<i class="fas fa-user-shield fill"></i>
 				<h3><p>Teste de segurança</p></h3>
-				<p>Os dados de seus cliente estão seguros? Teste a capacidade de segurança da sua rede e descubra o quao eficiente é seu site.</p>
+				<p>Os dados de seus clientes estão seguros? Teste a capacidade de segurança da sua rede e descubra o quão eficiente é seu site.</p>
 			</div>
 			<div id="work" class="circle-border">
 				<i class="fas fa-poll fill"></i>
 				<h3><p>Resultados</p></h3>
-				<p>Unindo um bom design a um seo bem otimizado seu site trará resultados que você nunca viu antes.</p>
+				<p>Unindo um bom design a um conteúdo bem otimizado seu site trará resultados que você nunca viu antes.</p>
 			</div>
 		</div>
 			<div id="skill">
@@ -149,7 +150,7 @@
     </section>
     <section id="contact">
   		<h1 style="color: white">Contato<br></h1>
-		<h5><small class="text-muted">Entre em contato para maiores informaçoes</small></h5>
+		<h5><small class="text-muted">Entre em contato para maiores informações</small></h5>
   		<div id="contactcenter">
 	  		<div id="contact-right">
 	  			<h3>Dúvidas? Quer um contato imediato? Use as opções abaixo!</h3>
