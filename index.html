@@ -23,7 +23,19 @@
 	<script type="text/javascrip" src="js/jquery.min.js"></script>
   </head>
   <body>
-    <header>
+    <header id="menu" class="" data-scroll>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		jQuery(function () {
+		  jQuery(window).scroll(function () {
+		    if (jQuery(this).scrollTop() > 100) {
+		     $("#menu").addClass("menu-active");
+		    } else {
+		     $("#menu").removeClass("menu-active");
+		    }
+		  });
+		});
+		</script>
       <a id="no-click" href="#home" class="logo" data-scroll>Alcateia Network</a>
       <nav class="nav-collapse">
         <ul>
@@ -35,6 +47,24 @@
       </nav>
     </header>
     <section id="home">
+    	<div id="intro-home" class=""> 
+    		<div>
+    			<h1 class="fill-h1">Alisson,<br>O PORTIFOLIO</h1>
+    			<p style="color: rgba(255,255,255,0.3);">*Disponivel apenas para melhores e mais bonitos clientes :)</p>
+    		</div>
+
+    		<div id="box-home">
+    			<div id="box-home-left">
+    				1<br>2<br>3<br>4<br>5<br>6<br>7<br>8
+    			</div>
+    			<div id="box-home-right">
+    				Novo por aqui? Obtenha 10% off em projetos a partir de 500 reais.<br>
+    				<br>
+    				Adiquira um site totalmente resposivo para sua empresa.<br><br>
+					Ta esperando oque? entre em contato agora!
+    			</div>
+    		</div>
+    	</div>
 		<div id="carouselSite" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
         </ol>
@@ -133,8 +163,8 @@
 			</div>
 			<div id="work" class="circle-border">
 				<i class="fas fa-poll fill"></i>
-				<h3><p>Resultados</p></h3>
-				<p>Unindo um bom design a um conteúdo bem otimizado seu site trará resultados que você nunca viu antes.</p>
+				<h3><p>Manutenção</p></h3>
+				<p>Renove o seu site, deixe ele mais moderno e responsivo com um design inovador e maior desempenho.</p>
 			</div>
 		</div>
 			<div id="skill">
