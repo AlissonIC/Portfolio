@@ -1,0 +1,36 @@
+sc-kGXeez hVkyCI
+
+
+
+
+git add index.html
+$ git commit -m "Version 1.0"
+$ git push origin master
+
+
+
+  box-shadow: inset 0 0 4em gray;
+
+
+  #411F8C
+
+
+li#no-click:focus{ 
+  outline: none;
+}
+
+
+
+<p id="boxtext">Ta esperando oque? entre em contato com a gente!</p>
+<script>
+	function typeWriter(textelement){
+		const textArray = textelement.innerHTML.split(''); //Break the text in lines
+		textelement.innerHTML = ''; // Clear the menssage
+		textArray.forEach((letter, i) =>{
+			setTimeout(() => textelement.innerHTML += letter, 30 * i); // Add letters
+		});
+	};
+
+	const boxtext = document.querySelector('p#boxtext');
+	typeWriter(boxtext);
+</script>
