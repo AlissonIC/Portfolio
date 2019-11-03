@@ -669,6 +669,18 @@ div#services-2{
   justify-content: center;
   align-items: center;  
 }
+#center-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.draggable{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #services h3{
   color: white;
   font-size: 20px;

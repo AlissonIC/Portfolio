@@ -1,44 +1,11 @@
-/* INICIAL CSS */
-
-body, div,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
-fieldset, form, label, legend, th, td,
-article, aside, figure, footer, header, hgroup, menu, nav, section,
-summary, hgroup {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-body{
-	background: #060c21;	
-}
-#controle{
-	width: 100%;
-	background: #060c21;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	color: white;
-}
-#card{
-	padding: 40px;
-	width: 20%;
-	border: 1px solid black;
-
+body {
+  background-color: #4099E6;
 }
 
-.module-border-wrap {
-  max-width: 250px;
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(215deg, red, transparent, purple);
-  padding: 3px;
+.carousel {
+  width: 100%;
+  margin: 0 auto;
 }
-
-.module {
-  background: #222;
-  color: white;
-  padding: 2rem;
+.slick-slide {
+	outline: none !important;
 }
