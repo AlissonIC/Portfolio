@@ -169,7 +169,7 @@ a:hover {
 
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  border-top: 1px solid #3c004d;
+  border-top: 1px solid black;
   text-decoration: none;
   padding: 0.7em 1em;
   width: 100%;
@@ -261,10 +261,8 @@ header {
   top: 0; 
 }
 .menu-active {
-  background: #6E038C;
-  border: 1px solid rgba(0,0,0,0.3);
-}
-header.active{
+  background: #0084b8;
+  border: none; 
 }
 .logo {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -343,7 +341,6 @@ section {
   height: 800px;
 }
 section#home {  
-  background: -webkit-linear-gradient(left, #6E038C 0%, #9004b8 100%);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -352,10 +349,8 @@ section#home {
   text-align: left;
 }
 div#intro-home {
-  background-image: url("../img/bghome5.png");
-  background-size: cover;
+  background:  #0084b8;
   height: 800px; 
-  box-shadow: inset 0 0 2em #3c004d;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -363,8 +358,8 @@ div#intro-home {
 }
 .fill-h1 {  
   font-size: 6rem;
-  color: white;
-  text-shadow: 0 0 0.2em black, 0 0 0.2em black;
+  color: #ffb300;
+  text-shadow: 0 0 0.1em black, 0 0 0.1em black;
 }
 @media screen and (max-width: 1024px) {
   .fill-h1 {  
@@ -413,6 +408,9 @@ div#skill {
   flex-wrap: wrap;
   justify-content: center;
 }   
+#skill p {
+  color: #979fa1;
+}
 div#footer {
   height: 105px;
   background: black;
@@ -431,10 +429,10 @@ h1 {
 h2 {  
   font-family: 'Bree Serif', sans-serif;
   font-size: 46px;
+  color: white;
 }
-h3 {
-  font: normal 100%/1.4 sans-serif;
-  font-weight: lighter;
+h3{
+  color:#595959;
 }
 h6{  
   font-family: 'Raleway', sans-serif;
@@ -454,7 +452,7 @@ p {
 section#about {
   height: 100%;
   padding-bottom:20px;
-  background: #f0f2f4;
+  background: #262a2b;
   color: black;
 }
 div#aboutcenter {
@@ -468,6 +466,7 @@ div#aboutcenter {
 div#left {
   width: 27%;
   margin-top: 15px;
+  padding-right: 49px;
 }
 div#right {
   width: 55%;
@@ -482,6 +481,12 @@ div#text {
   margin: 0px;
   padding: 10px;
   text-align: left;
+  border-left: 3px solid #c7440c;
+}
+#text p{
+  font: normal 100%/1.4 sans-serif;
+  font-weight: lighter;
+  color: #979fa1;
 }
 @media(max-width:985px) {
   section#about {
@@ -499,6 +504,7 @@ div#text {
     display: block;
     margin-top: 15px;
     padding-bottom: 50px;
+    padding-right: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -548,6 +554,7 @@ div#you-know-left {
   margin-top: 0px;
   margin-left: 30px;
   width: 49%;
+  text-align: left;
 }
 div#you-know-right {
   padding: 0px;
@@ -557,8 +564,11 @@ div#you-know-right {
 img#img-you-know {
   width: 330px;
 }
+#you-know-left h3{
+  color: #c7440c;
+}
 .coverbg {
-  background: url("https://matheusmhq.com.br/img/voce-sabia/foto-01.jpg") no-repeat fixed;
+  background: url("https://miro.medium.com/max/1200/0*qYji31AIscjHlk9a.jpg") no-repeat fixed;
   background-size: cover;
 }
 .vs-color {
@@ -580,6 +590,7 @@ p.h4 {
   font-family: 'Archivo Black', sans-serif;
   font-size: 4em;
   text-shadow: 10px 10px 10px black;
+  color: #0084b8;
 }
 @media (max-width:876px) {
   section#you-know {
@@ -632,7 +643,7 @@ p.h4 {
 --------------------------------------------- */
 
 section#projects {
-  background: #f7f7f7;
+  background: #262a2b;
   height: 100%;
 }
 #no-click:focus{ 
@@ -658,7 +669,8 @@ div#services-2{
   justify-content: center;
   align-items: center;  
 }
-#services,h3{
+#services h3{
+  color: white;
   font-size: 20px;
 }
 .is-skill {
@@ -667,10 +679,7 @@ div#services-2{
   margin: 0px;
   width: 110px;
   height: 112.5px;
-  border: 1px solid #949494;
-  background: #fff;
-  box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.2);
-  color: black;
+  color: white;
 }
 .fas-skill {
   font-size: 100px;
@@ -686,15 +695,13 @@ div#services-2{
 }
 .fill {
   /* background - Gradient */
-  background: -webkit-linear-gradient(left, #e52d27 0%, #b31217 100%);
-  background: linear-gradient(left, #e52d27 0%, #b31217 100%);
+  background: #0084b8;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .fill-sub {
   /* background - Gradient */
-  background: -webkit-linear-gradient(left, #e52d27 0%, #b31217 100%);
-  background: linear-gradient(left, #e52d27 0%, #b31217 100%);
+  background: #633111;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -702,14 +709,14 @@ div#services-2{
   max-width: 250px;
   padding: 1rem;
   position: relative;
-  background: linear-gradient(180deg,#bb00ff,transparent,#bb00ff);
+  background: linear-gradient(180deg,#0084b8,#2b2726);
   padding: 3px;
   margin: 10px;
 }
 .module {
   box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.2);
-  background: #fff;
-  color: black;
+  background: #1c1d21;
+  color: #979fa1;
   padding: 2rem;
   height: 100%;
 }
@@ -755,18 +762,22 @@ div#module-center-4{
 }
 div#module-center{
   box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.2);
-  border: 1px solid #147eff;
+  background: rgba(20, 23, 25, 0.8);
+  border: 1px solid #b85000;
   padding: 40px 0;
-  color: black;
+  color: #979fa1;
   width: 50%;
   height: auto;
+}
+#module-center h3{
+  color: white;
 }
 a.neon-button{
   position: relative;
   display: inline-block;
   padding: 7px 0px;
   width: 100%;
-  color: #2196f3;
+  color: #c7440c;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
@@ -776,7 +787,7 @@ a.neon-button{
 }
 a.neon-button:hover{
   color:white;
-  background: #2196f3;
+  background: #1c1d21;
   transition-delay: 1s;
 }
 a.neon-button span{
@@ -789,7 +800,7 @@ a.neon-button span:nth-child(1){
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg,transparent,#2196f3);
+  background: linear-gradient(90deg,transparent,#c7440c);
 }
 a.neon-button:hover span:nth-child(1){
   left: 100%;
@@ -800,7 +811,7 @@ a.neon-button span:nth-child(2){
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg,transparent,#2196f3);
+  background: linear-gradient(180deg,transparent,#c7440c);
 }
 a.neon-button:hover span:nth-child(2){
   top: 100%;
@@ -812,7 +823,7 @@ a.neon-button span:nth-child(3){
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg,transparent,#2196f3);
+  background: linear-gradient(270deg,transparent,#c7440c);
 }
 a.neon-button:hover span:nth-child(3){
   right: 100%;
@@ -824,7 +835,7 @@ a.neon-button span:nth-child(4){
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg,transparent,#2196f3);
+  background: linear-gradient(360deg,transparent,#c7440c);
 }
 a.neon-button:hover span:nth-child(4){
   bottom: 100%;
@@ -848,6 +859,7 @@ a.neon-button:hover span:nth-child(4){
 @media(max-width:485px) {
   section#projects {
     height: 100%;
+    padding-bottom: 20px;
   }
   div#services {
     margin-top: 20px;
@@ -877,8 +889,9 @@ a.neon-button:hover span:nth-child(4){
 section#exemples{
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #f7f7f7 95%,#060c21 100%);
+  background: #262a2b;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 div#clients{
   width: 100%;
@@ -912,28 +925,37 @@ div.client h3{
 .module-border-wrap1 {
   width: 350px;
   position: relative;
-  background: #2196f3;
-  box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.2);
-  border: 1px solid #147eff;
+  box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.5);
   padding: 3px;
-  margin: 10px;
+  margin: 30px;
 }
 .module1 {
-  background: rgba(255,255,255,0.9);
+  padding-top: 20px; 
+  margin-bottom: 20px;
+  background: #262a2b;
   color: black;
   height: auto;
 }
+.module1 h3{
+  color: white;
+}
+.module1 h4{
+  font: normal 100%/1.4 sans-serif;
+  font-weight: lighter;
+  color: #979fa1;
+}
 .clients-foto{
-  width: 100%;
+  width: 90%;
   height: auto;
-  border-bottom: 3px solid #2196f3;
+  border-bottom: 3px solid #b85000;
 }
 .clients-skill button{
   background: black;
   color: white;
+  border: none;
   padding: 3px 8px;
-  margin-top: 4px;
-  margin-bottom: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .clients-skill{
   display: flex;
@@ -942,10 +964,17 @@ div.client h3{
   align-items: center;
 }
 button.visit{
-  background: #2196f3;
+  background: #262a2b;
+  color: white;
+  margin-top: 10px;
   padding: 10px 30px;
-  border: 0;
-  width: 100%;
+  border: 1px solid #b85000;
+  width: 90%;
+}
+button.visit:hover{
+  background: #ff8400;
+  color: black;
+  transition: 0.4s;
 }
 @media(max-width:1024px) {
   div#clients{
@@ -961,7 +990,7 @@ button.visit{
   .module-border-wrap1 {
     margin: 0;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 @media(max-width:485px) {
@@ -971,7 +1000,7 @@ button.visit{
   .module-border-wrap1 {
     margin: 0;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -981,9 +1010,9 @@ button.visit{
 
 section#contact {
   height: 100%;
-  border-top: 1px solid rgba(0,0,0,0.3);
   padding-bottom: 30px;
-  background: #0E0D40;
+  background: #1c1d21;
+  padding-top: 30px;
   color: black;
 }
 #input {
@@ -1007,7 +1036,7 @@ section#contact {
   margin-top: 10px;
   width: 100%;
   padding: 10px;
-  background: #007eff;
+  background: #0084b8;
   border: 1px solid gray;
   border-radius: 5px;
 }
@@ -1031,7 +1060,6 @@ div#contactcenter {
 div#contact-left {
   display: inline-block;
   width: 40%;
-  height: 445px;
   padding: 20px;
   margin-top: 30px;
   margin-right: auto;
@@ -1039,22 +1067,23 @@ div#contact-left {
   background: rgba(255,255,255,0.9);
   border: 1px solid rgba(0,0,0,0.3);
 }
+h6{
+  color: white;
+}
 div#contact-right {
   text-align: left;
   width: 45%;
-  height: 445px;
   padding: 20px;
-  padding-top: 30px;
-  margin-top: 30px;
+  font: normal 100%/1.4 sans-serif;
+  font-weight: lighter;
+  color: #979fa1;
   margin-right: auto;
   margin-left: auto;
-  background: rgba(255,255,255,0.8);
-  border: 1px solid rgba(0,0,0,0.3); 
   border-radius: 5px;
 }
 .fascontact {
   font-size: 35px;
-  background: #007eff;
+  background: #b85000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 20px;
@@ -1064,7 +1093,7 @@ div#contact-right {
   float:left;
   display:block;
   font-size: 35px;
-  background: #007eff;
+  background: #b85000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 20px;
@@ -1072,7 +1101,7 @@ div#contact-right {
 }
 .fabcontactzap {
   font-size: 35px;
-  background: #007eff;
+  background: #b85000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 20px;
@@ -1128,16 +1157,10 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
-  h6{
-    color: white;
-  }
   div#contact-right {
     height: auto;
-    background: transparent;
-    border: none;
     color: gray; 
     text-align: left;
-    color: #616161;
     width: 90%;
     padding: 0px;
     padding-top: 10px;
