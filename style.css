@@ -6,6 +6,14 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+#carousel{	
+  display: none;
+}
+@media(max-width:485px) {
+	#carousel{
+		display: block;
+	}
+}
 .slick-slide {
 	outline: none !important;
 }

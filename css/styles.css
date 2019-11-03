@@ -293,6 +293,9 @@ a#no-click:click{
   .logo{
     padding: 0 15px;
   }
+  nav a#no-click{
+    padding: 14.4px 15px;
+  }
 }
 
 @media (max-width:480px) {
@@ -883,9 +886,11 @@ a.neon-button:hover span:nth-child(4){
     align-items: center;
   } 
   div#services-1 {
+    display: none;
     flex-direction: column;
   }
   div#services-2 {
+    display: none;
     flex-direction: column;
   }
   div#module-center{

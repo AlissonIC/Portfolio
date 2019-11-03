@@ -28,7 +28,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header id="menu" class="menu-active" data-scroll>
+    <header id="menu" class="" data-scroll>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		jQuery(function () {
+		  jQuery(window).scroll(function () {
+		    if (jQuery(this).scrollTop() > 3) {
+		     $("#menu").addClass("menu-active");
+		    } else {
+		     $("#menu").removeClass("menu-active");
+		    }
+		  });
+		});
+		</script>
       <a id="no-click" href="#home" class="logo" data-scroll>Alisson Custodio</a>
       <nav class="nav-collapse">
         <ul>
@@ -68,7 +80,7 @@
 	<section id="projects">
 		<h2>Serviços</h2>
 		<h3>Alguns dos serviços disponiveis</h3>
-		<div class="carousel">
+		<div class="carousel" id="carousel">
 				<div class="module-border-wrap">
 					<div id="module-1" class="module">
 						<i class="fas-skill fas fa-expand-arrows-alt fill"></i>
@@ -142,8 +154,64 @@
 		</div>
       	<div id="services">
       		<div id="services-1">	
+				<div class="module-border-wrap">
+					<div id="module-1" class="module">
+						<i class="fas-skill fas fa-expand-arrows-alt fill"></i>
+						<h3>Criação de sites</h3>
+						<p>Coloque sua marca online, com um site totalmente adaptavel pra usar no computado, celular ou tablet.</p><br>
+						<a href="#mc1" class="neon-button" class="btn-module border-0" data-element="#module-center-1" data-scroll>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Saiba mais
+						</a>		
+					</div>
+				</div>
+				<div class="module-border-wrap">
+					<div class="module">
+						<i class="fas-skill fas fa-user-shield fill"></i>
+						<h3>Teste de segurança</h3>
+						<p>Os dados de seus clientes estão seguros? Teste a capacidade de segurança da sua rede e descubra o quão eficiente é seu site.</p><br>
+						<a href="#mc2" class="neon-button" class="btn-module border-0" data-element="#module-center-2" data-scroll>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Saiba mais
+						</a>
+					</div>
+				</div>
 			</div>			
       		<div id="services-2">
+				<div class="module-border-wrap">
+					<div class="module">
+						<i class="fas-skill fas fa-poll fill"></i>
+						<h3>Manutenção</h3>
+						<p>Renove o seu site, deixe ele mais moderno e responsivo com um design inovador, maior desempenho e velocidade.</p><br>
+						<a href="#mc3" class="neon-button" class="btn-module border-0" data-element="#module-center-3" data-scroll>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Saiba mais
+						</a>
+					</div>
+				</div>
+				<div class="module-border-wrap">
+					<div class="module">
+						<i class="fas-skill far fa-file-code fill"></i>
+						<h3>Progamação</h3>
+						<p>Procura por algo mais especifico? Talvez um codigo em uma linguagem especifica para seu site? Pressione o botão a baixo.</p><br>
+						<a href="#mc4" class="neon-button" class="btn-module border-0" data-element="#module-center-4" data-scroll>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							Saiba mais
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -319,20 +387,16 @@
 	  		</div>
 	  	</div>
     </section>
-	<div id="footer">
-		© 2019 Alisson Custodio - Todos os direitos reservados.<br>
-	</div>	
-    <!-- Scroll for Services -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <!-- About menu, i don't know -->
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
-    <!-- Carousel -->
 	<script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
 	<script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
 	<script  src="script.js"></script>
 
+	<div id="footer">
+		© 2019 Alisson Custodio - Todos os direitos reservados.<br>
+	</div>
 </body>
 </html>
