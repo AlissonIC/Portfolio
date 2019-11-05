@@ -31,24 +31,26 @@
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header id="menu" class="menu-active" data-scroll>
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-      <a id="no-click" href="#home" class="logo" data-scroll>Alisson Custodio</a>
-      <nav class="nav-collapse">
-        <ul>
-          <li class="menu-item active"><a id="no-click" href="#home" data-scroll>Home</a></li>
-          <li class="menu-item"><a id="no-click" href="#about" data-scroll>Sobre</a></li>
-          <li class="menu-item"><a id="no-click" href="#projects" data-scroll>Serviços</a></li>
-          <li class="menu-item"><a id="no-click" href="#exemples" data-scroll>Portifolio</a></li>
-          <li class="menu-item"><a id="no-click" href="#contact" data-scroll>Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+    	<header>
+      		<a id="no-click" href="#home" class="logo" data-scroll>Alisson Custodio</a>
+    	</header>
+
+			<input type="checkbox" id="check">
+			<label id="icone" for="check"><img src="img/icone.png" style="width: 30px;"></label>
+			<div class="barra">
+				<nav>
+					<a id="no-click" href="#home" data-scroll><div class="link">Home</div></a>
+					<a id="no-click" href="#home" data-scroll><div class="link">Sobre</div></a>
+					<a id="no-click" href="#home" data-scroll><div class="link">Serviços</div></a>
+					<a id="no-click" href="#home" data-scroll><div class="link">Portifolio</div></a>
+					<a id="no-click" href="#home" data-scroll><div class="link">Contato</div></a>
+				</nav>
+			</div>
     <section id="home">
     	<div id="intro-home" class=""> 
     		<div>
     			<h1 class="fill-h1">Alisson,<br>O PORTIFOLIO</h1>
-    			<p style="color: rgba(0,0,0,0.3);">*Disponivel para serviçõs nacionais e internacionais.</p>
+    			<p style="color: rgba(255,255,255,0.3);">*Disponivel para serviçõs nacionais e internacionais.</p>
     		</div>
     	</div>
     </section>
@@ -430,7 +432,7 @@
 	  		</div>
 	  	</div>
     </section>
-    <div id="footer">
+	<div id="footer">
 		© 2019 Alisson Custodio - Todos os direitos reservados.<br>
 	</div>
 	<!-- Font Icons start-->
