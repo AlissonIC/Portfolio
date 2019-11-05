@@ -33,7 +33,8 @@ $('.carousel').slick({
         centerMode: true,
         centerPadding: '68px',
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1, 
+        variableWidth: true
       }
     }
     // You can unslick at a given breakpoint now by adding:

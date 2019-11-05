@@ -343,7 +343,8 @@ section {
   text-align: center;
   height: 800px;
 }
-section#home {  
+section#home { 
+  background: -webkit-linear-gradient(bottom, #0065b8 0%, #0084b8 50%); 
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -352,7 +353,8 @@ section#home {
   text-align: left;
 }
 div#intro-home {
-  background:  #0084b8;
+  background-image: url("/./img/bghome.png");
+  background-size: cover;
   height: 800px; 
   display: flex;
   flex-direction: column;
@@ -455,7 +457,6 @@ p {
 section#about {
   height: 100%;
   padding-bottom:20px;
-  background: #262a2b;
   color: black;
 }
 div#aboutcenter {
@@ -646,7 +647,6 @@ p.h4 {
 --------------------------------------------- */
 
 section#projects {
-  background: #262a2b;
   height: 100%;
 }
 #no-click:focus{ 
@@ -906,7 +906,6 @@ a.neon-button:hover span:nth-child(4){
 section#exemples{
   width: 100%;
   height: 100%;
-  background: #262a2b;
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -952,6 +951,11 @@ div.client h3{
   background: #262a2b;
   color: black;
   height: auto;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .module1 h3{
   color: white;
@@ -963,7 +967,7 @@ div.client h3{
 }
 .clients-foto{
   width: 90%;
-  height: auto;
+  height: 150px;
   border-bottom: 3px solid #b85000;
 }
 .clients-skill button{
@@ -980,15 +984,15 @@ div.client h3{
   justify-content: center;
   align-items: center;
 }
-button.visit{
+.visit{
   background: #262a2b;
   color: white;
   margin-top: 10px;
   padding: 10px 30px;
   border: 1px solid #b85000;
-  width: 90%;
+  width: 70%;
 }
-button.visit:hover{
+.visit:hover{
   background: #ff8400;
   color: black;
   transition: 0.4s;
@@ -1009,15 +1013,23 @@ button.visit:hover{
     margin-top: 10px;
     margin-bottom: 30px;
   }
+  .clients-skill button{
+    padding: 1px 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 @media(max-width:485px) {
   div#clients{
     flex-direction: column;
+    display: none;
   }
   .module-border-wrap1 {
     margin: 0;
+    width: 300px;
     margin-top: 10px;
     margin-bottom: 30px;
+    margin: 10px;
   }
 }
 

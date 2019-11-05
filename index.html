@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <title>Portifolio - Alisson</title>
+  	<!-- Config -->
+    <meta charset="utf-8">    
     <meta name="author" content="Adtile">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Alisson Custodio">
+    <meta name="robots" content="index,nofollow">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport" />
+    <meta name="keywords" content="site, progamação, empresarial, blog, criar, desenvolver, barato, rapido, hospedagem, onepage, uma pagina, Wordpress, Html, css,">
+    <meta name="description" content="Adquira seu site para alavancar sua empresa!">
+    <title>Portifolio - Alisson</title>
     <!-- Browser Color -->
     <meta name="theme-color" content="#0084b8" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#0084b8">
     <meta name="msapplication-navbutton-color" content="#0084b8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0084b8">
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/responsive-nav.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
     <!-- Carousel -->
+	<link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='css/slick.css'>
 	<link rel='stylesheet' href='css/slick-theme.css'>
-	<link rel="stylesheet" href="style.css">
-	<!-- Font Icons start-->
-    <script src="https://kit.fontawesome.com/e783a8e426.js" crossorigin="anonymous"></script>
     <!-- Font h1 -->
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <!-- Font h2/h3 -->
@@ -28,19 +31,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header id="menu" class="" data-scroll>
+    <header id="menu" class="menu-active" data-scroll>
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script type="text/javascript">
-		jQuery(function () {
-		  jQuery(window).scroll(function () {
-		    if (jQuery(this).scrollTop() > 3) {
-		     $("#menu").addClass("menu-active");
-		    } else {
-		     $("#menu").removeClass("menu-active");
-		    }
-		  });
-		});
-		</script>
       <a id="no-click" href="#home" class="logo" data-scroll>Alisson Custodio</a>
       <nav class="nav-collapse">
         <ul>
@@ -76,81 +68,80 @@
 			</div>
 		</div>
     </section>
-	
 	<section id="projects">
 		<h2>Serviços</h2>
 		<h3>Alguns dos serviços disponiveis</h3>
 		<div class="carousel" id="carousel">
-				<div class="module-border-wrap">
-					<div id="module-1" class="module">
-						<i class="fas-skill fas fa-expand-arrows-alt fill"></i>
-						<h3>Criação de sites</h3>
-						<p>Coloque sua marca online, com um site totalmente adaptavel pra usar no computado, celular ou tablet.</p><br>
-						<a href="#mc1" class="neon-button" class="btn-module border-0" data-element="#module-center-1" data-scroll>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							Saiba mais
-						</a>		
-						<script type="text/javascript">
-							$(function() {
-							  $(".neon-button").click(function(e) {
-							    e.preventDefault();
-							    el = $(this).data('element');
-							    $(el).slideToggle();
-							    if($(this).text() == "Ocultar"){
-								$(this).text("Saiba mais");
-								} else{
-						    		$(this).text("Ocultar");
-								}
-							  });
-							});
-						</script>
-					</div>
+			<div class="module-border-wrap">
+				<div id="module-1" class="module">
+					<i class="fas-skill fas fa-expand-arrows-alt fill"></i>
+					<h3>Criação de sites</h3>
+					<p>Coloque sua marca online, com um site totalmente adaptavel pra usar no computado, celular ou tablet.</p><br>
+					<a href="#mc1" class="neon-button" class="btn-module border-0" data-element="#module-center-1" data-scroll>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Saiba mais
+					</a>		
+					<script type="text/javascript">
+						$(function() {
+						  $(".neon-button").click(function(e) {
+						    e.preventDefault();
+						    el = $(this).data('element');
+						    $(el).slideToggle();
+						    if($(this).text() == "Ocultar"){
+							$(this).text("Saiba mais");
+							} else{
+					    		$(this).text("Ocultar");
+							}
+						  });
+						});
+					</script>
 				</div>
-				<div class="module-border-wrap" id="center-box">
-					<div class="module">
-						<i class="fas-skill fas fa-user-shield fill"></i>
-						<h3>Teste de segurança</h3>
-						<p>Os dados de seus clientes estão seguros? Teste a capacidade de segurança da sua rede e descubra o quão eficiente é seu site.</p><br>
-						<a href="#mc2" class="neon-button" class="btn-module border-0" data-element="#module-center-2" data-scroll>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							Saiba mais
-						</a>
-					</div>
+			</div>
+			<div class="module-border-wrap" id="center-box">
+				<div class="module">
+					<i class="fas-skill fas fa-user-shield fill"></i>
+					<h3>Teste de segurança</h3>
+					<p>Os dados de seus clientes estão seguros? Teste a capacidade de segurança da sua rede e descubra o quão eficiente é seu site.</p><br>
+					<a href="#mc2" class="neon-button" class="btn-module border-0" data-element="#module-center-2" data-scroll>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Saiba mais
+					</a>
 				</div>
-				<div class="module-border-wrap" id="center-box">
-					<div class="module">
-						<i class="fas-skill fas fa-poll fill"></i>
-						<h3>Manutenção</h3>
-						<p>Renove o seu site, deixe ele mais moderno e responsivo com um design inovador, maior desempenho e velocidade.</p><br>
-						<a href="#mc3" class="neon-button" class="btn-module border-0" data-element="#module-center-3" data-scroll>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							Saiba mais
-						</a>
-					</div>
+			</div>
+			<div class="module-border-wrap" id="center-box">
+				<div class="module">
+					<i class="fas-skill fas fa-poll fill"></i>
+					<h3>Manutenção</h3>
+					<p>Renove o seu site, deixe ele mais moderno e responsivo com um design inovador, maior desempenho e velocidade.</p><br>
+					<a href="#mc3" class="neon-button" class="btn-module border-0" data-element="#module-center-3" data-scroll>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Saiba mais
+					</a>
 				</div>
-				<div class="module-border-wrap" id="center-box">
-					<div class="module">
-						<i class="fas-skill far fa-file-code fill"></i>
-						<h3>Progamação</h3>
-						<p>Procura por algo mais especifico? Talvez um codigo em uma linguagem especifica para seu site? Pressione o botão a baixo.</p><br>
-						<a href="#mc4" class="neon-button" class="btn-module border-0" data-element="#module-center-4" data-scroll>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							Saiba mais
-						</a>
-					</div>
+			</div>
+			<div class="module-border-wrap" id="center-box">
+				<div class="module">
+					<i class="fas-skill far fa-file-code fill"></i>
+					<h3>Progamação</h3>
+					<p>Procura por algo mais especifico? Talvez um codigo em uma linguagem especifica para seu site? Pressione o botão a baixo.</p><br>
+					<a href="#mc4" class="neon-button" class="btn-module border-0" data-element="#module-center-4" data-scroll>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Saiba mais
+					</a>
 				</div>
+			</div>
 		</div>
       	<div id="services">
       		<div id="services-1">	
@@ -214,138 +205,190 @@
 				</div>
 			</div>
 		</div>
-
-			<div id="mc1"></div>
-			<div id="module-center-1" style="display: none;">
-				<div id="module-center">
-					<i class="fas-skill fas fa-expand-arrows-alt fill"></i>
-					<h3>Criação de sites</h3>
-					<p style="text-align: left">&nbsp; Ultimamente vivemos na era digital, a era onde todos estão necessariamente conectados de alguma forma a grande rede de computadores, internet. Hoje você pode facilmente desde consultar o saldo da sua conta do banco até mesmo fazer uma compra em uma loja física do outro lado do planeta, de forma que se algo ou alguém não esta na internet, simplesmente não existe.</p><br>
-					<p style="text-align: left">&nbsp; Pensando nisso oferecemos nossos serviços para colocar sua empresa online quanto antes possível, e melhor, totalmente do jeitinho que você quer e necessita. Faça o seu orçamento do seu projeto sem qualquer compromisso, entre em contato e seja digital!</p><br>
-					<p style="text-align: left">&nbsp; Clique no número ( <a href="" style="color:#ff6f00"><b>+17-99775.5598</b></a> ) para nos enviar um Whatsapp e tirar suas dúvidas agora!</p>
-				</div>
+		<div id="mc1"></div>
+		<div id="module-center-1" style="display: none;">
+			<div id="module-center">
+				<i class="fas-skill fas fa-expand-arrows-alt fill"></i>
+				<h3>Criação de sites</h3>
+				<p style="text-align: left">&nbsp; Ultimamente vivemos na era digital, a era onde todos estão necessariamente conectados de alguma forma a grande rede de computadores, internet. Hoje você pode facilmente desde consultar o saldo da sua conta do banco até mesmo fazer uma compra em uma loja física do outro lado do planeta, de forma que se algo ou alguém não esta na internet, simplesmente não existe.</p><br>
+				<p style="text-align: left">&nbsp; Pensando nisso oferecemos nossos serviços para colocar sua empresa online quanto antes possível, e melhor, totalmente do jeitinho que você quer e necessita. Faça o seu orçamento do seu projeto sem qualquer compromisso, entre em contato e seja digital!</p><br>
+				<p style="text-align: left">&nbsp; Clique no número ( <a href="" style="color:#ff6f00"><b>+17-99775.5598</b></a> ) para nos enviar um Whatsapp e tirar suas dúvidas agora!</p>
 			</div>
-			<div id="mc2"></div>
-			<div id="module-center-2" style="display: none;">
-				<div id="module-center">
-					<i class="fas-skill fas fa-user-shield fill"></i>
-					<h3>Teste de segurança</h3>
-					<p style="text-align: left">&nbsp; Com a modernização das tarefas e a era da digitalização, surge na sociedade moderna um novo receio sobre segurança, afinal, eu estou seguro acessando a internet? A resposta é sim e não, a verdade que nos usuários nunca estaremos 100% seguros acessando a internet, mas e as empresas?</p><br>
-					<p style="text-align: left">&nbsp; Um usuário descuidado pode sem querer informar a senha do Facebook pessoal dele a um Hacker e perder todo o acesso a sua conta, oque é ruim, mas imagine se o mesmo acontece com a empresa Facebook. Segundo a revista <a style="color: #ff6f00" href="https://exame.abril.com.br/tecnologia/quanto-o-facebook-perde-a-cada-minuto-que-fica-fora-do-ar/"><b>Exame</b></a> 60 Segundos de Facebook fora do ar é o equivalente a um prejuízo de <a style="color: #ff6f00" href="https://exame.abril.com.br/tecnologia/quanto-o-facebook-perde-a-cada-minuto-que-fica-fora-do-ar/"><b>103.528,22 de dólares</b></a>.</p><br>
-					<p style="text-align: left">&nbsp; Clique no número ( <a href="" style="color:#ff6f00"><b>+17-99775.5598</b></a> ) para nos enviar um Whatsapp e tirar suas dúvidas agora!</p>
-				</div>
-			</div>
-			<div id="mc3"></div>
-			<div id="module-center-3" style="display: none;">
-				<div id="module-center">
-					<i class="fas-skill fas fa-poll fill"></i>
-					<h3>Manutenção</h3>
-					<p style="text-align: left">&nbsp; A internet hoje esta na sua 5 década e muita coisa mudou desde sua criação, os estilos de sites mudaram, suas estruturas, seus conteúdos, entre outros... Partindo desse raciocínio, a lei da seleção natural foi responsável por ditar com bastante peso quais sites são 'utilizáveis' ou não.</p><br>
-					<p style="text-align: left">&nbsp; Um site considerado moderno, hoje em dia é basicamente formado por um <b>design limpo</b>, necessariamente <b>responsivo</b>, com <b>interações</b> e que seja de <b>rápido carregamento</b> oque infelizmente nem sempre acontece em todos os sites.</p><br>					<p style="text-align: left">&nbsp; Com base nisso foi disponibilizado os serviços de reparação em sites já existentes que precisam daquele toque de modernização para se adequar ao mercado.</p><br>
-					<p style="text-align: left">&nbsp; Clique no número ( <a href="" style="color:#ff6f00"><b>+17-99775.5598</b></a> ) para nos enviar um Whatsapp e tirar suas dúvidas agora!</p>
-				</div>
-			</div>
-			<div id="mc4"></div>
-			<div id="module-center-4" style="display: none;">
-				<div id="module-center">
-					<i class="fas-skill fas fa-poll fill"></i>
-					<h3>Progamação</h3>
-					<p style="text-align: left">&nbsp; Esta procurando por algo mais específico? Um código feito em uma linguagem específica? Não se preocupe, nos te ajudamos!.</p><br>
-					<p style="text-align: left">&nbsp; Temos suporte a mais de 6 Linguagens diferentes, sendo elas JavaScript, Python, MySql, PHP, HTML5, CSS...</p><br>
-					<p style="text-align: left">&nbsp; Clique no número ( <a href="" style="color:#ff6f00"><b>+17-99775.5598</b></a> ) para nos enviar um Whatsapp e tirar suas dúvidas agora!</p>
-				</div>
-			</div>
-			<div id="skill">
-				<div class="is-skill"><i class="fab fa-html5 fill-sub"></i><br> <p>HTML5</p></div>
-				<div class="is-skill"><i class="fab fa-css3-alt fill-sub"></i><br> <p>CSS3</p></div>
-				<div class="is-skill"><i class="fab fa-js fill-sub"></i><br> <p>JavaScript</p></div>
-				<div class="is-skill"><i class="fab fa-php fill-sub"></i><br> <p>PHP</p></div>
-				<div class="is-skill"><i class="fab fa-python fill-sub"></i></i><br> <p>Python</p></div>
-				<div class="is-skill"><i class="fab fa-wordpress-simple fill-sub"></i><br> <p>WordPress</p></div>
-				<div class="is-skill"><i class="fab fa-node fill-sub"></i><br> <p>Node.js</p></div>
-				<div class="is-skill"><i class="fab fa-html5 fill-sub"></i><br> <p>HTML5</p></div>
-				<div class="is-skill"><i class="fas1 fas fa-database fill-sub"></i><br> <p>MySQL</p></div>		
-			</div>
-    </section><section id="you-know">
-		<div class="coverbg">
-		<div class="vs-color">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-				<p class="h4">Você sabia?</p>
-				Seu site pode estar perdendo visibilidade e você perdendo dinheiro!<br>
-			<div id="minhaDiv" style="display:none" class="you-know-center">
-				<div id="you-know-left">
-					<p>• 94% dos Brasileiros acessam a internet pelo celular.</p><br><br>
-
-					<p>• A compatibilidade de um site com dispositivos móveis é um fator de classificação nos resultados de buscas do Google.</p><br><br>
-
-					<h3>SITE NÃO RESPONSIVO SIGNIFICA ESTAR ATRÁS DA CONCORRÊNCIA!</h3>
-				</div>
-				<div id="you-know-right">
-					<img id="img-you-know" src="https://matheusmhq.com.br/img/voce-sabia/responsivo.gif"/>
-				</div>
-			</div>		
-			<script type="text/javascript">
-				$(function() {
-				  $(".btn-toggle").click(function(e) {
-				    e.preventDefault();
-				    el = $(this).data('element');
-				    $(el).slideToggle();
-				    if($(this).text() == "Ver mais"){
-					$(this).text("Ver menos");
-					} else{
-			    		$(this).text("Ver mais");
-					}
-				  });
-				});
-			</script>
-			<button id="no-click" type="button" class="btn-toggle border-0" data-element="#minhaDiv" href="#you-know" data-scroll>Ver mais</button>
 		</div>
+		<div id="mc2"></div>
+		<div id="module-center-2" style="display: none;">
+			<div id="module-center">
+				<i class="fas-skill fas fa-user-shield fill"></i>
+				<h3>Teste de segurança</h3>
+				<p style="text-align: left">&nbsp; Com a modernização das tarefas e a era da digitalização, surge na sociedade moderna um novo receio sobre segurança, afinal, eu estou seguro acessando a internet? A resposta é sim e não, a verdade que nos usuários nunca estaremos 100% seguros acessando a internet, mas e as empresas?</p><br>
+				<p style="text-align: left">&nbsp; Um usuário descuidado pode sem querer informar a senha do Facebook pessoal dele a um Hacker e perder todo o acesso a sua conta, oque é ruim, mas imagine se o mesmo acontece com a empresa Facebook. Segundo a revista <a style="color: #ff6f00" href="https://exame.abril.com.br/tecnologia/quanto-o-facebook-perde-a-cada-minuto-que-fica-fora-do-ar/"><b>Exame</b></a> 60 Segundos de Facebook fora do ar é o equivalente a um prejuízo de <a style="color: #ff6f00" href="https://exame.abril.com.br/tecnologia/quanto-o-facebook-perde-a-cada-minuto-que-fica-fora-do-ar/"><b>103.528,22 de dólares</b></a>.</p><br>
+				<p style="text-align: left">&nbsp; Clique no número ( <a href="" style="color:#ff6f00"><b>+17-99775.5598</b></a> ) para nos enviar um Whatsapp e tirar suas dúvidas agora!</p>
+			</div>
+		</div>
+		<div id="mc3"></div>
+		<div id="module-center-3" style="display: none;">
+			<div id="module-center">
+				<i class="fas-skill fas fa-poll fill"></i>
+				<h3>Manutenção</h3>
+				<p style="text-align: left">&nbsp; A internet hoje esta na sua 5 década e muita coisa mudou desde sua criação, os estilos de sites mudaram, suas estruturas, seus conteúdos, entre outros... Partindo desse raciocínio, a lei da seleção natural foi responsável por ditar com bastante peso quais sites são 'utilizáveis' ou não.</p><br>
+				<p style="text-align: left">&nbsp; Um site considerado moderno, hoje em dia é basicamente formado por um <b>design limpo</b>, necessariamente <b>responsivo</b>, com <b>interações</b> e que seja de <b>rápido carregamento</b> oque infelizmente nem sempre acontece em todos os sites.</p><br>					<p style="text-align: left">&nbsp; Com base nisso foi disponibilizado os serviços de reparação em sites já existentes que precisam daquele toque de modernização para se adequar ao mercado.</p><br>
+				<p style="text-align: left">&nbsp; Clique no número ( <a href="" style="color:#ff6f00"><b>+17-99775.5598</b></a> ) para nos enviar um Whatsapp e tirar suas dúvidas agora!</p>
+			</div>
+		</div>
+		<div id="mc4"></div>
+		<div id="module-center-4" style="display: none;">
+			<div id="module-center">
+				<i class="fas-skill fas fa-poll fill"></i>
+				<h3>Progamação</h3>
+				<p style="text-align: left">&nbsp; Esta procurando por algo mais específico? Um código feito em uma linguagem específica? Não se preocupe, nos te ajudamos!.</p><br>
+				<p style="text-align: left">&nbsp; Temos suporte a mais de 6 Linguagens diferentes, sendo elas JavaScript, Python, MySql, PHP, HTML5, CSS...</p><br>
+				<p style="text-align: left">&nbsp; Clique no número ( <a href="" style="color:#ff6f00"><b>+17-99775.5598</b></a> ) para nos enviar um Whatsapp e tirar suas dúvidas agora!</p>
+			</div>
+		</div>
+		<div id="skill">
+			<div class="is-skill"><i class="fab fa-html5 fill-sub"></i><br> <p>HTML5</p></div>
+			<div class="is-skill"><i class="fab fa-css3-alt fill-sub"></i><br> <p>CSS3</p></div>
+			<div class="is-skill"><i class="fab fa-js fill-sub"></i><br> <p>JavaScript</p></div>
+			<div class="is-skill"><i class="fab fa-php fill-sub"></i><br> <p>PHP</p></div>
+			<div class="is-skill"><i class="fab fa-python fill-sub"></i></i><br> <p>Python</p></div>
+			<div class="is-skill"><i class="fab fa-wordpress-simple fill-sub"></i><br> <p>WordPress</p></div>
+			<div class="is-skill"><i class="fab fa-node fill-sub"></i><br> <p>Node.js</p></div>
+			<div class="is-skill"><i class="fab fa-html5 fill-sub"></i><br> <p>HTML5</p></div>
+			<div class="is-skill"><i class="fas1 fas fa-database fill-sub"></i><br> <p>MySQL</p></div>		
+		</div>
+    </section>
+    <section id="you-know">
+		<div class="coverbg">
+			<div class="vs-color">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+					<p class="h4">Você sabia?</p>
+					Seu site pode estar perdendo visibilidade e você perdendo dinheiro!<br>
+				<div id="minhaDiv" style="display:none" class="you-know-center">
+					<div id="you-know-left">
+						<p>• 94% dos Brasileiros acessam a internet pelo celular.</p><br><br>
+
+						<p>• A compatibilidade de um site com dispositivos móveis é um fator de classificação nos resultados de buscas do Google.</p><br><br>
+
+						<h3>SITE NÃO RESPONSIVO SIGNIFICA ESTAR ATRÁS DA CONCORRÊNCIA!</h3>
+					</div>
+					<div id="you-know-right">
+						<img id="img-you-know" src="img/responsivo.gif"/>
+					</div>
+				</div>		
+				<script type="text/javascript">
+					$(function() {
+					  $(".btn-toggle").click(function(e) {
+					    e.preventDefault();
+					    el = $(this).data('element');
+					    $(el).slideToggle();
+					    if($(this).text() == "Ver mais"){
+						$(this).text("Ver menos");
+						} else{
+				    		$(this).text("Ver mais");
+						}
+					  });
+					});
+				</script>
+				<button id="no-click" type="button" class="btn-toggle border-0" data-element="#minhaDiv" href="#you-know" data-scroll>Ver mais</button>
+			</div>
 		</div>
 	</section>
     <section id="exemples">
     	<h2>Portifolio</h2>
 		<h3>Alguns projetos desenvolvidos</h3><br>
+		<div class="carousel" id="carousel">
+			<div class="module-border-wrap1">
+				<div class="module1">
+					<img class="clients-foto" src="img/casa-de-louvor.jpg">
+					<h3>Pentecostal Casa de Louvor</h3>
+					<h4>Desenvolvimento e publicação.</h4>
+					<div class="clients-skill">
+						 | <button href="div#skill" data-scroll>Html5</button>
+						 | <button href="div#skill" data-scroll>CSS3</button>
+						 | <button href="div#skill" data-scroll>JavaScript</button>
+						 | <button href="div#skill" data-scroll>Jquery</button>
+						 | <button href="div#skill" data-scroll>SASS</button> | 
+					</div>
+					<a href="https://casadelouvor.org.br/" class="visit" target="_blank" data-scroll>Visitar</a>
+				</div>
+			</div>
+			<div class="module-border-wrap1">
+				<div class="module1">
+					<img class="clients-foto" src="img/cebolinha-burger.png">
+					<h3>Cebolinha Burger</h3>
+					<h4>Desenvolvimento e publicação.</h4>
+					<div class="clients-skill">
+						 | <button href="div#skill" data-scroll>Html5</button>
+						 | <button href="div#skill" data-scroll>CSS3</button>
+						 | <button href="div#skill" data-scroll>Jquery</button>
+						 | <button href="div#skill" data-scroll>Wordpress</button>
+						 | <button href="div#skill" data-scroll>Boostrap</button> | 
+					</div>
+					<a href="https://cebolinhaburger.com/" class="visit" target="_blank" data-scroll>Visitar</a>
+				</div>
+			</div>
+			<div class="module-border-wrap1">
+				<div class="module1">
+					<img class="clients-foto" src="img/vega-agro.jpg">
+					<h3>Vega - Agronegocio</h3>
+					<h4>Desenvolvimento e publicação.</h4>
+					<div class="clients-skill">
+						 | <button href="div#skill" data-scroll>Html5</button>
+						 | <button href="div#skill" data-scroll>CSS3</button>
+						 | <button href="div#skill" data-scroll>Jquery</button>
+						 | <button href="div#skill" data-scroll>JavaScript</button> | 
+					</div>
+					<a href="http://www.vegaagro.com.br/" class="visit" target="_blank" data-scroll>Visitar</a>
+				</div>
+			</div>
+		</div>
+
 		<div id="clients">
 			<div id="clients-1">
 				<div class="module-border-wrap1">
 					<div class="module1">
-						<img class="clients-foto" src="https://thumbnail.ws/output/top-500/w1280/603ba21f0ab8a5e485a4dd9ff68a8be8.png">
-						<h3>Facebook</h3>
+						<img class="clients-foto" src="img/casa-de-louvor.jpg">
+						<h3>Pentecostal Casa de Louvor</h3>
 						<h4>Desenvolvimento e publicação.</h4>
 						<div class="clients-skill">
 							 | <button href="div#skill" data-scroll>Html5</button>
 							 | <button href="div#skill" data-scroll>CSS3</button>
-							 | <button href="div#skill" data-scroll>JavaScript</button> | 
+							 | <button href="div#skill" data-scroll>JavaScript</button>
+							 | <button href="div#skill" data-scroll>Jquery</button>
+							 | <button href="div#skill" data-scroll>SASS</button> | 
 						</div>
-						<button href="" class="visit" data-scroll>Visitar</button>
+						<a href="https://casadelouvor.org.br/" class="visit" target="_blank" data-scroll>Visitar</a>
 					</div>
 				</div>
 				<div class="module-border-wrap1">
 					<div class="module1">
-						<img class="clients-foto" src="https://thumbnail.ws/output/top-500/w1280/603ba21f0ab8a5e485a4dd9ff68a8be8.png">
-						<h3>Facebook</h3>
+						<img class="clients-foto" src="img/cebolinha-burger.png">
+						<h3>Cebolinha Burger</h3>
 						<h4>Desenvolvimento e publicação.</h4>
 						<div class="clients-skill">
 							 | <button href="div#skill" data-scroll>Html5</button>
 							 | <button href="div#skill" data-scroll>CSS3</button>
-							 | <button href="div#skill" data-scroll>JavaScript</button> | 
+							 | <button href="div#skill" data-scroll>Jquery</button>
+							 | <button href="div#skill" data-scroll>Wordpress</button>
+							 | <button href="div#skill" data-scroll>Boostrap 4</button> | 
 						</div>
-						<button href="" class="visit" data-scroll>Visitar</button>
+						<a href="https://cebolinhaburger.com/" class="visit" target="_blank" data-scroll>Visitar</a>
 					</div>
 				</div>
 			</div>	
 			<div id="clients-2">
 				<div class="module-border-wrap1">
 					<div class="module1">
-						<img class="clients-foto" src="https://thumbnail.ws/output/top-500/w1280/603ba21f0ab8a5e485a4dd9ff68a8be8.png">
-						<h3>Facebook</h3>
+						<img class="clients-foto" src="img/vega-agro.jpg">
+						<h3>Vega - Agronegocio</h3>
 						<h4>Desenvolvimento e publicação.</h4>
 						<div class="clients-skill">
 							 | <button href="div#skill" data-scroll>Html5</button>
 							 | <button href="div#skill" data-scroll>CSS3</button>
+							 | <button href="div#skill" data-scroll>Jquery</button>
 							 | <button href="div#skill" data-scroll>JavaScript</button> | 
 						</div>
-						<button href="" class="visit" data-scroll>Visitar</button>
+						<a href="http://www.vegaagro.com.br/" class="visit" target="_blank" data-scroll>Visitar</a>
 					</div>
 				</div>
 			</div>
@@ -387,16 +430,20 @@
 	  		</div>
 	  	</div>
     </section>
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
-	<script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
-	<script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
-	<script  src="script.js"></script>
-
 	<div id="footer">
 		© 2019 Alisson Custodio - Todos os direitos reservados.<br>
 	</div>
+	<!-- Font Icons start-->
+    <script src="js/responsive-nav.js"></script>
+    <script src="https://kit.fontawesome.com/e783a8e426.js" crossorigin="anonymous"></script>
+    <!-- Menu -->
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+    <!-- Carousel -->
+	<script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+	<script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
+	<script src="script.js"></script>
 </body>
 </html>
