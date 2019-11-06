@@ -6,8 +6,8 @@
 }
 #form{
 	background: white;
-	width: 80%;
-	padding: 20px;
+	width: 30%;
+	padding: 20px 40px;
 	margin-top: 90px;
 	margin-bottom: 40px;
 }
@@ -42,12 +42,12 @@
 	width: 100%;
 }
 form{
-	margin-top: 30px;
+	margin-top: 4px;
 }
 input{
-	width: 100%;
+	width: 95%;
 	border-radius: 5px;
-	padding: 5px 0px;
+	padding: 5px 10px;
 	font-size: 20px;
 	background: #ebe6e1;
 	border: 1px solid #c7440c;
@@ -55,7 +55,7 @@ input{
 	outline: none;
 }
 button{
-	margin-top: 40px;	
+	margin-top: 20px;	
 	padding: 6px 0px;
 	font-size: 20px;
 	background: #c7440c;
@@ -75,4 +75,10 @@ h2{
 h3{
 	margin-top: 10px;
 	margin-bottom: 5px;
+}
+@media (max-width:768px){
+	#form{
+		width: 80%;
+		padding: 20px;
+	}
 }
