@@ -70,7 +70,7 @@
           <div class="btn-options"><a href="">Vendas</a></div>
           <div class="btn-options"><a href="">Controle</a></div>
           <div class="btn-options"><a href="">Comparações</a></div>
-          <div class="btn-options"><a href="">Contato</a></div>
+          <div class="btn-options"><a href="">Promover meu site</a></div>
         </div>
 
         <h3>Suporte:</h3>

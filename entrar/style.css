@@ -3,9 +3,11 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	height: 100vh;
 }
 #form{
-	background: white;
+	background: rgba(255,255,255,0.9);
 	width: 30%;
 	padding: 20px;
 	margin-top: 90px;
@@ -40,6 +42,15 @@
 	color: white;
 	border-radius: 5px;
 	width: 100%;
+}
+#bg{
+	background: url("../img/login-background.png") no-repeat fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+#content-form{
+	background: rgba(0,0,0,0.3);
 }
 form{
 	margin-top: 4px;

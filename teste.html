@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+        }
+        .banner {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .banner__titulo {
+            font-size: 100px;
+            color: white;
+            animation-name: efeito;
+            animation-duration: 1s;
+            animation-timing-function:ease-in;
+            opacity: 1;
+            position: absolute;
+            left: 100px;
+            top: 170px
+
+        }
+
+        @keyframes efeito {
+            from {
+                opacity: 0;
+                left: 140px;
+            }
+
+            to {
+                opacity: 1;
+                left: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h1 class="banner__titulo">
+            Meu Título
+        </h1>
+    </div>
+</body>
+
+</html>

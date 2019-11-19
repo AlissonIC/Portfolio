@@ -42,3 +42,14 @@ $('.carousel').slick({
     // instead of a settings object
   ]
 });
+
+$('.avaliations').slick({ 
+  arrows: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  speed: 900,
+  fade: true,
+  cssEase: 'linear',
+});
