@@ -43,13 +43,13 @@ $('.carousel').slick({
   ]
 });
 
-$('.avaliations').slick({ 
+$('.avaliations').slick({
+  dots: false,
   arrows: false,
+  speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
+  infinite: true,
   autoplay: true,
   autoplaySpeed: 5000,
-  speed: 900,
-  fade: true,
-  cssEase: 'linear',
 });
